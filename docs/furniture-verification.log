@@ -1,0 +1,255 @@
+Standalone game: /workspace/sites/little-eyes/Little-Eyes-Tycoon.html
+✔ generated atlas crop regions and required animation frames are valid (17.066394ms)
+✔ bad crop rejected and failed image loads leave retryable placeholders (38.637023ms)
+✔ all equipment, patient, work and cosmetic assets are integrated (0.508999ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 62.193991
+✔ standalone boots, preset opens and a practice starts without external module requests (939.56075ms)
+✔ wall art can be purchased then selected from placed furnishings for inventory return (406.743907ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1352.319888
+✔ purchases atomic, canceled drafts free, repeat commits never charge twice (5.883118ms)
+✔ invalid routes, patient overlaps and overspending are rejected (0.688125ms)
+✔ inventory returns no coins and reuses owned item; core and seat minimum protected (5.650147ms)
+✔ finishes are free and moving active equipment preserves exam progress (21.136446ms)
+✔ layout edits cannot trap a patient even if all station approaches remain reachable (12.094789ms)
+✔ rotating each occupied phase preserves captured kit, timer and one original payment (644.232084ms)
+✔ inventory placement enforces variant milestones on otherwise valid saved furniture (1.164441ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 697.616646
+✔ pause reasons compose and background time does not catch up (1.246894ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6.762119
+✔ move rotate and style use one preview without saving before Confirm (530.636005ms)
+✔ four turns and reverse work before tile selection and purchase charges once (513.509761ms)
+✔ Cancel close selection switch and Escape never mutate a pending edit (1061.014954ms)
+✔ inspect style starts a free preview and mounted prints have no rotation controls (351.241534ms)
+✔ Build pauses but leaving preserves an existing manual pause (1982.671716ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4447.202793
+✔ combined move, rotate and style preserves every pending field until one free confirmation (11.432866ms)
+✔ purchase previews cost once and invalid or locked updates preserve the whole candidate (8.82339ms)
+✔ inventory, store and stale commits remain atomic and respect their gates (7.54373ms)
+✔ style-only edits never restart walking or service timers (10.844633ms)
+✔ moving reception resumes captured check-in and payment time without restarting service (21.461996ms)
+✔ both presets and starters preserve occupied exams through every four-view rotation and pay once (3268.877851ms)
+✔ waiting-chair rotations preserve unique reservations in both clinics and all four views (38.454174ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3377.405036
+✔ each existing style has four complete art profiles and actual distinct rear assets (3.064178ms)
+✔ all128 examination combinations use oriented anchors, connected mounts and one attachment owner (81.901375ms)
+✔ waiting chairs and counters own their composited actors with directional layer occlusion (1.746611ms)
+✔ reception participants face one another in every counter orientation (1.364297ms)
+✔ rear optical heads move to eye contact behind the patient and stay physically linked throughout sitting and standing (5.2312ms)
+✔ rear manual and trial work hands meet the eye-level instrument rather than the cabinet (0.267181ms)
+✔ empty equipment thumbnails share the live support endpoints in every view (9.090201ms)
+✔ rear manual and trial reach uses raised-arm art while the doctor stays beside the chair (0.347691ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 109.785869
+✔ both furnished presets have navigable service approaches (6.399613ms)
+✔ routing avoids furniture, rugs remain walkable, paths exclude start (1.067424ms)
+✔ rotation transforms footprints and service points (0.265619ms)
+✔ rejects overlap, bounds, blocked entrance and inaccessible approaches (0.261233ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13.004864
+✔ all four models, two orientations and eight appearances have stable contact anchors (264.906199ms)
+✔ patient sits, is examined, stands, and pays exactly once afterward (21.045925ms)
+✔ selecting new gear holds reserved art and payout until the chair is released (16.698134ms)
+✔ rotation chooses seated direction independent of walking; reduced motion freezes work (4.8169ms)
+✔ topmost opaque region wins and transparent pixels pass taps through (0.490578ms)
+✔ wall print picking follows its wall-plane skew rather than an upright floating rectangle (0.361393ms)
+✔ articulated phoropter mounts stay connected to the moving instrument in every occupied phase (45.683452ms)
+✔ gentle idle motion stops with reduced motion and never shifts seated eye contact (0.322805ms)
+✔ thin mechanical arm hit regions select the arm only near its visible segment (0.270897ms)
+✔ registered sprite outline excludes neighbouring atlas fragments during picking (0.334443ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 362.463758
+✔ four geometry profiles preserve old views and add opposite access sides (2.591626ms)
+✔ four forward and backward turns restore orientation and original footprint (2.471715ms)
+✔ orientation two uses unswapped footprint and invalid views fail layout safely (5.831355ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 18.081829
+✔ v4 round-trip retains both starter wallets without additional grants (8.024642ms)
+✔ v2 migrates each tier, preserves property and XP, retains old data (6.514712ms)
+✔ grandfathered ownership is valid below the current purchase gate (3.031016ms)
+✔ invalid v4 never overwrites v4 or silently falls back to a valid v2 (10.905392ms)
+✔ legacy overflow and corrupt JSON are rejected safely (0.268975ms)
+✔ blocked storage preserves migrated session and reports the warning (1.553385ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 38.17449
+✔ game starts with the portrait control sheet collapsed and equipment can be inspected (397.300041ms)
+✔ equipment panel stays live; build mode pauses and keeps placement within reach (1118.667719ms)
+✔ object move action selects existing equipment rather than purchasing another (261.595685ms)
+✔ new practice is reachable inside the portrait Practice panel and can change presets (261.382409ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2045.1497
+✔ new practice requires a starter choice and grants either wallet only once (1038.578792ms)
+✔ equipment and milestones show stats, locks and cosmetic requirements (263.809295ms)
+✔ milestone notification stays live and acknowledging merges into the latest reward state (5903.615557ms)
+✔ reload preserves wallet and milestone acknowledgments without starter or celebration replay (284.363555ms)
+✔ corrupt current save opens explicit recovery without overwriting either record (183.329908ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7681.294544
+✔ starter wallets and ownership are granted once by clinic creation (1.405803ms)
+✔ equipment duration and reward derive from their explicit multipliers (0.403957ms)
+✔ milestone boundaries, maximum progression and ordered notifications (0.478559ms)
+✔ purchase gates, duplicate clicks and free grandfathered ownership selection (0.511759ms)
+✔ payment grants XP once and reserved equipment survives later selection (39.796999ms)
+✔ cosmetic variants and finishes enforce milestones without changing prices or footprints (1.719163ms)
+✔ paying from maximum representable counters keeps the clinic safely saveable (20.932689ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 70.913642
+✔ isometric coordinates round-trip at different zoom and pan (0.928746ms)
+✔ ground depth sorts background before foreground (0.195314ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6.820826
+✔ patients arrive, check in, wait, see doctor, pay once and leave (42.042793ms)
+✔ queue stays bounded, seats and doctor have exclusive reservations (130.230978ms)
+✔ upgrades charge once and preserve an exam already in progress (49.643232ms)
+✔ counter gives ready payment priority and insufficient upgrade has no effect (0.370838ms)
+✔ a later seated patient cannot overtake the first checked-in patient (0.420382ms)
+✔ a failed empty route is never mistaken for arrival at the exam station (0.344517ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 230.179309
+✔ v4 saves all four directions and keeps original starter and economy (13.796975ms)
+✔ v3 migration preserves both presets including orientation1 access and original bytes (4.693554ms)
+✔ v2 direct migration and wall-print normalization preserve prior records (1.750911ms)
+✔ corrupt newest save requires explicit older recovery and blocked writes preserve session (3.265778ms)
+✔ reset clears all tycoon generations without reviving an older clinic (0.173982ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 30.859717
+✔ small gameplay instructions meet 4.5:1 contrast on visit background (3.593771ms)
+✔ reset is reachable outside the hidden mobile sidebar (0.277517ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8.925664
+✔ new clinic and ordered visit with gentle retries (1.412383ms)
+✔ all chart directions and invalid inputs (0.233601ms)
+✔ nonmatching frames and equipment rewards (0.209085ms)
+✔ purchases never duplicate or overspend (0.144998ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8.478532
+✔ missing and malformed saves fall back to new game (1.027534ms)
+✔ save progression only, restore, then clear (0.739882ms)
+✔ blocked storage is safe and reports session-only (0.302735ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8.433024

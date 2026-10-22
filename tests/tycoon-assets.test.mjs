@@ -1,0 +1,10 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {validateManifest,loadAssets} from '../dist/tycoon/assets.mjs';
+const manifest=JSON.parse(readFileSync(new URL('../dist/assets/manifest.json',import.meta.url)));
+test('generated atlas crop regions and required animation frames are valid',()=>{assert.equal(validateManifest(manifest),true);for(const sheet of Object.values(manifest.files)){const file=readFileSync(new URL('../dist/'+sheet.file,import.meta.url));assert.equal(file.readUInt32BE(16),sheet.width);assert.equal(file.readUInt32BE(20),sheet.height);}for(let i=0;i<18;i++)assert.ok(manifest.sprites['furniture:'+i]);for(let c=0;c<6;c++)for(let d=0;d<4;d++)for(const mode of ['walk','idle','sit'])for(let f=0;f<2;f++)assert.ok(manifest.sprites[`character:${c}:${mode}:${d}:${f}`]);});
+test('bad crop rejected and failed image loads leave retryable placeholders',async()=>{const bad=structuredClone(manifest);bad.sprites['furniture:0'].rect[2]=90000;assert.equal(validateManifest(bad),false);const r=await loadAssets(manifest,()=>{},async()=>{throw Error('missing')});assert.equal(r.failed.length,Object.keys(manifest.files).length);assert.equal(r.sprites['furniture:0'].image,null);});
+test('all equipment, patient, work and cosmetic assets are integrated',()=>{
+ for(const id of ['trial_frame','manual_phoropter','digital_phoropter','digital_suite'])for(let r=0;r<2;r++)for(const layer of ['rear','front'])assert.ok(manifest.sprites[`station:${id}:${r}:${layer}`]);
+ for(let c=2;c<10;c++)for(let d=0;d<4;d++)for(const mode of ['walk','idle','sit'])for(let f=0;f<2;f++)assert.ok(manifest.sprites[`character:${c}:${mode}:${d}:${f}`]);
+ for(const family of ['trial','manual','digital'])for(let d=0;d<2;d++)for(let f=0;f<2;f++)assert.ok(manifest.sprites[`doctor:${family}:${d}:${f}`]);
+ for(const kind of ['floor:rose_tile','floor:walnut','wall:seafoam','wall:rose','variant:chair:navy:0','variant:art:signature:0'])assert.ok(manifest.sprites[kind]);
+});

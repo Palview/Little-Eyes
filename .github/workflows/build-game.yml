@@ -1,0 +1,29 @@
+name: Build Little Eyes
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build game and run regression checks
+        run: node scripts/check-tycoon.mjs
+      - name: Check standalone JavaScript
+        run: node --check /tmp/little-eyes-tycoon-bundle-check.js
+      - name: Upload downloadable game
+        uses: actions/upload-artifact@v4
+        with:
+          name: Little-Eyes-Game
+          path: Little-Eyes-Portrait.html
+          compression-level: 9
+          if-no-files-found: error
+          retention-days: 30

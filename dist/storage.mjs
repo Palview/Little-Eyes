@@ -1,0 +1,5 @@
+const KEY='little-eyes-save-v1';
+const fresh=()=>({coins:100,completedVisits:0,upgrades:[]});
+export function loadProgress(storage){try{const raw=storage.getItem(KEY);if(!raw)return {progress:fresh(),sessionOnly:false};const p=JSON.parse(raw);if(!p||p.version!==1||!Number.isSafeInteger(p.coins)||p.coins<0||!Number.isSafeInteger(p.completedVisits)||p.completedVisits<0||!Array.isArray(p.upgrades)||!p.upgrades.every(id=>['plant','chair','equipment'].includes(id))||new Set(p.upgrades).size!==p.upgrades.length)return {progress:fresh(),sessionOnly:false};return {progress:{coins:p.coins,completedVisits:p.completedVisits,upgrades:[...p.upgrades]},sessionOnly:false};}catch{return {progress:fresh(),sessionOnly:!storage||(()=>{try{storage.getItem(KEY);return false}catch{return true}})()};}}
+export function saveProgress(storage,g){try{storage.setItem(KEY,JSON.stringify({version:1,coins:g.coins,completedVisits:g.completedVisits,upgrades:g.upgrades}));return true}catch{return false}}
+export function clearProgress(storage){try{storage.removeItem(KEY);return true}catch{return false}}

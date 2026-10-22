@@ -1,0 +1,65 @@
+[
+  {
+    "file": "dist/assets/rotation/chairs.png",
+    "originalGeneration": "exec-47096778-62bb-465b-a5f7-fb028c150aec.png",
+    "sha256": "4245679a96a4975b2e097ae31537dc5c8f7243b6998f4f08f608820605ad37e5",
+    "bytes": 1967156,
+    "originalBytesPreserved": true
+  },
+  {
+    "file": "dist/assets/rotation/surfaces.png",
+    "originalGeneration": "exec-d8f74048-6870-4bca-90c7-1d24174edbcc.png",
+    "sha256": "860a59c6d6ee96c14b10367c01a80d10c682368edb459884d3cb4c233b451cb0",
+    "bytes": 1716562,
+    "originalBytesPreserved": true
+  },
+  {
+    "file": "dist/assets/rotation/displays.png",
+    "originalGeneration": "exec-153b5d46-3368-42dc-a58a-bbc19ee015d9.png",
+    "sha256": "327f1c903fcc5e76788558ab8057401c12258a7480fe4557e218126ae1afc253",
+    "bytes": 1873879,
+    "originalBytesPreserved": true
+  },
+  {
+    "file": "dist/assets/rotation/plants.png",
+    "originalGeneration": "exec-c2b2ada1-2bff-465d-8455-1eae880370c2.png",
+    "sha256": "f61efe907cdf6cfefd7c8bb925aaf51d2c69b9e1c821a7ce91d0ed41bd5b5473",
+    "bytes": 1648391,
+    "originalBytesPreserved": true
+  },
+  {
+    "file": "dist/assets/rotation/patients-rear.png",
+    "originalGeneration": "exec-e94311e0-a237-4953-8fe4-715c5bc53a49.png",
+    "sha256": "e59fae52316f5486fb4a650a20d702e21dc573467fe24c6f4429338aa86b63f4",
+    "bytes": 1621610,
+    "originalBytesPreserved": true
+  },
+  {
+    "file": "dist/assets/rotation/staff.png",
+    "originalGeneration": "exec-bd7b9a70-ecb7-4135-9e98-b0b278bacef0.png",
+    "sha256": "0b9c54b73fe7f25a705db686a6d738f971ddf0fa98310ebc97559c96b30fcf37",
+    "bytes": 1145571,
+    "originalBytesPreserved": true
+  },
+  {
+    "file": "dist/assets/rotation/exam-head-source.png",
+    "originalGeneration": "exec-9d7d57e2-7a22-4c1b-a5ff-dcf6cf301dff.png",
+    "sha256": "18e0b0235ada553eead6174aa25cd2611a92451593c61a11ed615a98d911bb92",
+    "bytes": 1226761,
+    "originalBytesPreserved": true
+  },
+  {
+    "file": "dist/assets/rotation/exam-rear.png",
+    "originalGeneration": "exec-71326a45-d5e5-4a09-9a49-fb05524f8d6c.png",
+    "sha256": "ad59ea5c2531ca3d38134790be1d2b27c1ea78b3847fe7347f6f4b2d77dfefb2",
+    "bytes": 1433425,
+    "originalBytesPreserved": true
+  },
+  {
+    "file": "dist/assets/rotation/rear-reach.png",
+    "originalGeneration": "exec-5041e045-f97e-46b0-8108-aff7e45abb1f.png",
+    "sha256": "93da4becc956972addc13d3c132494f73efbab31efb818796ce90e98453a786b",
+    "bytes": 1783270,
+    "originalBytesPreserved": true
+  }
+]

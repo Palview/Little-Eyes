@@ -1,0 +1,3 @@
+export function createClock(){return {reasons:new Set(),last:null,accumulator:0};}
+export function setPauseReason(clock,reason,active){active?clock.reasons.add(reason):clock.reasons.delete(reason);clock.last=null;clock.accumulator=0;}
+export function consumeFrame(clock,timestampMs){if(clock.reasons.size){clock.last=null;clock.accumulator=0;return [];}if(clock.last===null){clock.last=timestampMs;return [];}clock.accumulator+=Math.max(0,Math.min(.25,(timestampMs-clock.last)/1000));clock.last=timestampMs;const steps=[];while(clock.accumulator>=.05-1e-9){clock.accumulator-=.05;steps.push(.05);}return steps;}

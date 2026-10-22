@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {project,unproject,depthKey} from '../dist/tycoon/scene.mjs';
+test('isometric coordinates round-trip at different zoom and pan',()=>{for(const z of [.6,1,1.8])for(const t of [{x:0,y:0},{x:5.3,y:7.8},{x:14,y:7}]){const camera={x:240,y:120,zoom:z};const p=project(t,camera);const back=unproject(p,camera);assert.ok(Math.abs(back.x-t.x)<1e-8);assert.ok(Math.abs(back.y-t.y)<1e-8);}});
+test('ground depth sorts background before foreground',()=>{assert.ok(depthKey({x:1,y:1})<depthKey({x:2,y:3}));assert.ok(depthKey({x:2,y:2})<depthKey({x:2,y:3}));});
